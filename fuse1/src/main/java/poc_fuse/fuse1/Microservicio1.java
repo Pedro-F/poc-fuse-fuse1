@@ -24,9 +24,10 @@ public class Microservicio1 {
 		long iniTime = System.currentTimeMillis();
 		
 		
+		
 		System.out.println("FIN ServicioB.  ts = {" + (System.currentTimeMillis() - iniTime) + "}");
 		
-		return "hola";
+		return "<br><h1><strong>Microservicio 1 Client ==> GET STOCK </strong></h1></br>";
 	}
 	
 	
