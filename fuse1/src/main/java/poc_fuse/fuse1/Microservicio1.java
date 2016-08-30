@@ -17,8 +17,14 @@ public class Microservicio1 {
 		super();
 	}
 
+	@RequestMapping("/")
+	String homeMethod() {
+		return "<br><h1><strong>Microservicio 1</strong></h1></br>";
+	}
+
+	
 	@RequestMapping(value = "/Microservicio1", method = RequestMethod.POST)
-	public @ResponseBody String Microservicio1(@RequestBody String mensajeIn) {
+	public @ResponseBody String Microservicio1Method(@RequestBody String mensajeIn) {
 		
 		
 		long iniTime = System.currentTimeMillis();
